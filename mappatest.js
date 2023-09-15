@@ -2,15 +2,12 @@ let myMap;
 let canvas;
 const mappa = new Mappa('Leaflet');
 const options = {
-  lat: 
-54.705581679104775, 
-  lng: 
-25.24944307864644, 
-  zoom: 
-12, 
-  style: 
-"http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-  }
+  lat: 40.73447,
+  lng: -74.00232,
+  zoom: 13,
+  style: 'http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+}
+
 function setup() {
   canvas = createCanvas(displayWidth, displayHeight);
   myMap = mappa.tileMap(options); 
