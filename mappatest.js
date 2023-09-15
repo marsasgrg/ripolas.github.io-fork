@@ -15,7 +15,11 @@ function setup() {
   document.addEventListener('contextmenu', event => event.preventDefault());
   fill(200, 100, 100);
   myMap.onChange(drawPoint);
-  httpGet("//78.56.245.255:8969/ipset/132",'text');
+  loadStrings("http://78.56.245.255:8969/ipset/69", gotData);
+}
+function gotData(data) {
+  // Process the text data received from the server
+  console.log(data);
 }
 function drawPoint(){
 }
