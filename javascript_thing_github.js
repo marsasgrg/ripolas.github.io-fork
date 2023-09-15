@@ -3,10 +3,10 @@ function setup() {
 }
 
 function draw() {
-   background('#222');
-   ellipse(windowWidth / 2, windowHeight / 2, 100, 100);
-   fill('#07C');
+   background(0);
+   fill('#49789D');
    noStroke();
+   ellipse(mouseX,mouseY, 100, 100);
 }
 
 function windowResized() {
